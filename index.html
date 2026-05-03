@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>市毛大渡 &mdash; Portfolio</title>
+  <meta name="description" content="市毛大渡のポートフォリオ。京都大学電気電子工学科3回生。Software / Hardware / AI。">
+  <meta property="og:title" content="市毛大渡 — Portfolio">
+  <meta property="og:description" content="Kyoto University EEE 3rd Year. Software / Hardware / AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kain18915.github.io">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Noto+Sans+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-logo">KI</span>
+      <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    </div>
+  </div>
+
   <div class="cursor"></div>
 
   <nav>
@@ -19,6 +33,9 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark">
+        <span class="theme-icon">◐</span>
+      </button>
     </div>
   </nav>
 
@@ -31,7 +48,7 @@
       </h1>
       <p class="hero-sub">
         Kyoto University &mdash; 3rd Year<br>
-        Software &nbsp;/&nbsp; Hardware &nbsp;/&nbsp; AI
+        <span id="typewriter"></span><span class="typewriter-cursor">|</span>
       </p>
       <a href="#about" class="btn">Explore &darr;</a>
     </div>
@@ -98,7 +115,7 @@
         <div class="project-item fade-up">
           <div class="project-num">001</div>
           <div class="project-info">
-            <h3>Local LLM Server</h3>
+            <h3>Local LLM Server <span class="arrow">→</span></h3>
             <p>OllamaとLM Studioを用いたローカルLLM運用基盤の構築。複数モデルの管理と自動化</p>
           </div>
           <div class="project-tags">
@@ -108,7 +125,7 @@
         <div class="project-item fade-up">
           <div class="project-num">002</div>
           <div class="project-info">
-            <h3>Automation Workflows</h3>
+            <h3>Automation Workflows <span class="arrow">→</span></h3>
             <p>Google Apps ScriptとNotionを連携させたタスク・支出管理の自動化システム</p>
           </div>
           <div class="project-tags">
@@ -118,11 +135,11 @@
         <div class="project-item fade-up">
           <div class="project-num">003</div>
           <div class="project-info">
-            <h3>Signal Analysis Tools</h3>
-            <p>波動干渉・回折の実験データ解析スクリプト。LaTeXレポートとの連携</p>
+            <h3>Signal Analysis Tools <span class="arrow">→</span></h3>
+            <p>波動干渉・回折の実験データ解析スクリプト。Python + NumPyによる可視化</p>
           </div>
           <div class="project-tags">
-            <span>Python</span><span>NumPy</span><span>LaTeX</span>
+            <span>Python</span><span>NumPy</span><span>SciPy</span>
           </div>
         </div>
       </div>
