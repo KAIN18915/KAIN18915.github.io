@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>市毛大渡 &mdash; Portfolio</title>
-  <meta name="description" content="市毛大渡のポートフォリオ。京都大学電気電子工学科3回生。Software / Hardware / AI。">
-  <meta property="og:title" content="市毛大渡 — Portfolio">
-  <meta property="og:description" content="Kyoto University EEE 3rd Year. Software / Hardware / AI.">
+  <title>Taito Ichige / 市毛 大渡 — Portfolio</title>
+  <meta name="description" content="Taito Ichige (市毛 大渡) — Kyoto University EEE, exchange at University of Washington. Portfolio for internships and career forums.">
+  <meta property="og:title" content="Taito Ichige / 市毛 大渡 — Portfolio">
+  <meta property="og:description" content="Kyoto University Electrical &amp; Electronic Engineering. Exchange student at UW Seattle.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kain18915.github.io">
+  <meta property="og:url" content="https://www.kainel18915.f5.si">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Noto+Sans+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Preloader -->
   <div id="preloader">
     <div class="preloader-inner">
       <span class="preloader-logo">KI</span>
@@ -22,53 +21,59 @@
     </div>
   </div>
 
-  <div class="cursor"></div>
+  <div class="cursor" aria-hidden="true"></div>
 
   <nav>
     <div class="nav-inner">
       <span class="nav-logo">KI</span>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#events" data-i18n="nav.events">Events</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
-      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark">
-        <span class="theme-icon">◐</span>
-      </button>
+      <div class="nav-actions">
+        <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+        <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark">
+          <span class="theme-icon">◐</span>
+        </button>
+      </div>
     </div>
   </nav>
 
   <section id="hero">
     <div class="hero-inner">
-      <p class="hero-tag">Electrical &amp; Electronic Engineering</p>
+      <p class="hero-tag" data-i18n="hero.tag">Electrical &amp; Electronic Engineering</p>
       <h1>
-        市毛
-        <span class="name-sub">大渡</span>
+        <span class="name-ja">市毛</span>
+        <span class="name-sub name-ja">大渡</span>
+        <span class="name-en">Taito Ichige</span>
       </h1>
       <p class="hero-sub">
-        Kyoto University &mdash; 3rd Year<br>
+        <span data-i18n="hero.line1">Kyoto University — Faculty of Engineering, EEE</span><br>
+        <span data-i18n="hero.line2">Exchange: University of Washington, Seattle (until March 2027)</span><br>
         <span id="typewriter"></span><span class="typewriter-cursor">|</span>
       </p>
-      <a href="#about" class="btn">Explore &darr;</a>
+      <a href="#about" class="btn" data-i18n="hero.cta">Explore ↓</a>
     </div>
-    <div class="hero-deco"></div>
+    <div class="hero-deco" aria-hidden="true"></div>
   </section>
 
   <section id="about">
     <div class="section-inner">
-      <h2 class="section-title"><span class="num">01</span> About</h2>
+      <h2 class="section-title"><span class="num">01</span> <span data-i18n="nav.about">About</span></h2>
       <div class="about-grid">
         <div class="about-text fade-up">
-          <p>京都大学工学部電気電子工学科3回生。信号処理・RF工学・AIシステムを中心に学んでいます。</p>
-          <p>幼少期を横浜・ヨハネスブルグ・カサブランカで過ごし、札幌南高校を経て京都大学へ進学。多様な文化的背景を持ちながら、テクノロジーと工学の交点で活動しています。</p>
+          <p data-i18n="about.p1"></p>
+          <p data-i18n="about.p2"></p>
           <ul class="about-facts">
-            <li>📍 Kyoto, Japan</li>
-            <li>🎓 Kyoto University &mdash; EEE</li>
-            <li>💻 Python / TypeScript / C++</li>
-            <li>🌏 日本語 / English</li>
+            <li data-i18n="about.fact1"></li>
+            <li data-i18n="about.fact2"></li>
+            <li data-i18n="about.fact3"></li>
+            <li data-i18n="about.fact4"></li>
           </ul>
+          <p class="about-todo" data-i18n="about.todo"></p>
         </div>
         <div class="about-visual fade-up">
           <div class="about-box">
@@ -83,27 +88,27 @@
 
   <section id="skills">
     <div class="section-inner">
-      <h2 class="section-title"><span class="num">02</span> Skills</h2>
+      <h2 class="section-title"><span class="num">02</span> <span data-i18n="nav.skills">Skills</span></h2>
       <div class="skills-grid">
         <div class="skill-card fade-up">
           <div class="skill-icon">⚡</div>
-          <h3>Electronics</h3>
-          <p>信号処理、RF工学、伝送線路理論、マイクロ波解析</p>
+          <h3 data-i18n="skills.elec.title">Electronics</h3>
+          <p data-i18n="skills.elec.body"></p>
         </div>
         <div class="skill-card fade-up">
           <div class="skill-icon">💻</div>
-          <h3>Software</h3>
-          <p>Python / TypeScript / C++ / Bash。Docker、Linux、API開発</p>
+          <h3 data-i18n="skills.sw.title">Software</h3>
+          <p data-i18n="skills.sw.body"></p>
         </div>
         <div class="skill-card fade-up">
           <div class="skill-icon">🤖</div>
-          <h3>AI / ML</h3>
-          <p>ローカルLLM運用（Ollama / LM Studio）、Qwen / Llama / Gemma</p>
+          <h3 data-i18n="skills.ai.title">AI / ML</h3>
+          <p data-i18n="skills.ai.body"></p>
         </div>
         <div class="skill-card fade-up">
           <div class="skill-icon">🔧</div>
-          <h3>Tools</h3>
-          <p>GitHub、Notion、Google Apps Script、VS Code、LaTeX</p>
+          <h3 data-i18n="skills.tools.title">Tools</h3>
+          <p data-i18n="skills.tools.body"></p>
         </div>
       </div>
     </div>
@@ -111,46 +116,73 @@
 
   <section id="projects">
     <div class="section-inner">
-      <h2 class="section-title"><span class="num">03</span> Projects</h2>
+      <h2 class="section-title"><span class="num">03</span> <span data-i18n="nav.projects">Projects</span></h2>
+      <p class="section-note fade-up" data-i18n="projects.note"></p>
       <div class="projects-list">
-        <div class="project-item fade-up">
+        <a class="project-item fade-up" href="https://github.com/KAIN18915/3d-2048" target="_blank" rel="noopener">
           <div class="project-num">001</div>
           <div class="project-info">
-            <h3>Local LLM Server <span class="arrow">→</span></h3>
-            <p>OllamaとLM Studioを用いたローカルLLM運用基盤の構築。複数モデルの管理と自動化</p>
+            <h3>3D 2048 <span class="arrow">→</span></h3>
+            <p data-i18n="projects.p1"></p>
           </div>
-          <div class="project-tags">
-            <span>Python</span><span>Docker</span><span>AI</span>
-          </div>
-        </div>
-        <div class="project-item fade-up">
+          <div class="project-tags"><span>JavaScript</span><span>Game</span></div>
+        </a>
+        <a class="project-item fade-up" href="https://github.com/KAIN18915/3d-browser" target="_blank" rel="noopener">
           <div class="project-num">002</div>
           <div class="project-info">
-            <h3>Automation Workflows <span class="arrow">→</span></h3>
-            <p>Google Apps ScriptとNotionを連携させたタスク・支出管理の自動化システム</p>
+            <h3>DOM 3D World Browser <span class="arrow">→</span></h3>
+            <p data-i18n="projects.p2"></p>
           </div>
-          <div class="project-tags">
-            <span>GAS</span><span>Notion</span><span>TypeScript</span>
-          </div>
-        </div>
-        <div class="project-item fade-up">
+          <div class="project-tags"><span>TypeScript</span><span>WebGL</span></div>
+        </a>
+        <a class="project-item fade-up" href="https://github.com/KAIN18915/KULMS_notion_extention" target="_blank" rel="noopener">
           <div class="project-num">003</div>
           <div class="project-info">
-            <h3>Signal Analysis Tools <span class="arrow">→</span></h3>
-            <p>波動干渉・回折の実験データ解析スクリプト。Python + NumPyによる可視化</p>
+            <h3>KU LMS → Notion <span class="arrow">→</span></h3>
+            <p data-i18n="projects.p3"></p>
           </div>
-          <div class="project-tags">
-            <span>Python</span><span>NumPy</span><span>SciPy</span>
+          <div class="project-tags"><span>Chrome</span><span>Notion</span></div>
+        </a>
+        <a class="project-item fade-up" href="https://github.com/KAIN18915/boston-cf-trip-guide" target="_blank" rel="noopener">
+          <div class="project-num">004</div>
+          <div class="project-info">
+            <h3>Boston Career Forum Guide <span class="arrow">→</span></h3>
+            <p data-i18n="projects.p4"></p>
           </div>
-        </div>
+          <div class="project-tags"><span>Guide</span><span>2026</span></div>
+        </a>
+        <a class="project-item fade-up" href="https://github.com/KAIN18915/web-calculator" target="_blank" rel="noopener">
+          <div class="project-num">005</div>
+          <div class="project-info">
+            <h3>Web Calculator <span class="arrow">→</span></h3>
+            <p data-i18n="projects.p5"></p>
+          </div>
+          <div class="project-tags"><span>HTML</span><span>CSS</span></div>
+        </a>
       </div>
     </div>
   </section>
 
   <section id="events">
     <div class="section-inner">
-      <h2 class="section-title"><span class="num">04</span> Events</h2>
+      <h2 class="section-title"><span class="num">04</span> <span data-i18n="nav.events">Events</span></h2>
       <div class="events-list">
+
+        <div class="event-item fade-up">
+          <div class="event-date">
+            <span class="event-year">2026</span>
+            <span class="event-month">Nov</span>
+          </div>
+          <div class="event-info">
+            <div class="event-header">
+              <h3>Boston Career Forum</h3>
+              <span class="event-badge" data-i18n="events.planned">Planned</span>
+            </div>
+            <p class="event-place" data-i18n="events.boston.place"></p>
+            <p class="event-desc" data-i18n="events.boston.desc"></p>
+          </div>
+          <div class="event-tags"><span>Career</span><span>US</span></div>
+        </div>
 
         <div class="event-item fade-up">
           <div class="event-date">
@@ -159,15 +191,13 @@
           </div>
           <div class="event-info">
             <div class="event-header">
-              <h3>JANOG57 Meeting</h3>
-              <span class="event-badge">Attendee</span>
+              <h3>JANOG57</h3>
+              <span class="event-badge" data-i18n="events.attendee">Attendee</span>
             </div>
-            <p class="event-place">📍 コングレコンベンションセンター / JAM BASE &mdash; 大阪</p>
-            <p class="event-desc">日本ネットワークオペレーターズグループ（JANOG）主催の国内最大級ネットワーク技術カンファレンス。テーマ「ふらっとJANOG」のもと、過去最多6000名超が参加した大規模イベント。ネットワーク運用・技術・セキュリティなど最新の議論に参加しました。</p>
+            <p class="event-place" data-i18n="events.janog.place"></p>
+            <p class="event-desc" data-i18n="events.janog.desc"></p>
           </div>
-          <div class="event-tags">
-            <span>Network</span><span>Ops</span><span>Security</span>
-          </div>
+          <div class="event-tags"><span>Network</span><span>Ops</span></div>
         </div>
 
         <div class="event-item fade-up">
@@ -178,14 +208,12 @@
           <div class="event-info">
             <div class="event-header">
               <h3>Axies 2024</h3>
-              <span class="event-badge">Attendee</span>
+              <span class="event-badge" data-i18n="events.attendee">Attendee</span>
             </div>
-            <p class="event-place">📍 奈良県コンベンションセンター &mdash; 奈良</p>
-            <p class="event-desc">大学ICT推進協議会（AXIES）の2024年度年次大会。テーマ「ICTで大学教育と研究の未来を拓く」のもと、大学間のICT活用・情報共有・クラウド・認証・セキュリティなど幅広い分野の発表・議論に参加しました。</p>
+            <p class="event-place" data-i18n="events.axies.place"></p>
+            <p class="event-desc" data-i18n="events.axies.desc"></p>
           </div>
-          <div class="event-tags">
-            <span>Academic ICT</span><span>University</span><span>Cloud</span>
-          </div>
+          <div class="event-tags"><span>ICT</span><span>University</span></div>
         </div>
 
       </div>
@@ -194,20 +222,21 @@
 
   <section id="contact">
     <div class="section-inner">
-      <h2 class="section-title"><span class="num">05</span> Contact</h2>
+      <h2 class="section-title"><span class="num">05</span> <span data-i18n="nav.contact">Contact</span></h2>
       <div class="contact-inner fade-up">
-        <h3 class="contact-heading">Let's Connect</h3>
-        <p class="contact-text">インターンシップや技術的なコラボレーションについてはお気軽にどうぞ。</p>
+        <h3 class="contact-heading" data-i18n="contact.heading">Let's Connect</h3>
+        <p class="contact-text" data-i18n="contact.body"></p>
+        <p class="contact-email"><a href="mailto:taito.ichige.23w@st.kyoto-u.ac.jp">taito.ichige.23w@st.kyoto-u.ac.jp</a></p>
         <div class="contact-links">
-          <a href="https://github.com/KAIN18915" class="contact-btn" target="_blank" rel="noopener">GitHub &rarr;</a>
+          <a href="https://github.com/KAIN18915" class="contact-btn" target="_blank" rel="noopener">GitHub →</a>
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <span>&copy; 2026 市毛大渡</span>
-    <span>Built with GitHub Pages</span>
+    <span data-i18n="footer.copy">© 2026 Taito Ichige / 市毛 大渡</span>
+    <span data-i18n="footer.built">GitHub Pages</span>
   </footer>
 
   <script src="script.js"></script>
