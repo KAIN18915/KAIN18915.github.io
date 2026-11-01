@@ -31,7 +31,6 @@ const I18N = {
     'projects.p1': 'クラシック2048の3D版パズルゲーム。',
     'projects.p2': 'HTML/DOMを3D空間（建物・通路・ポータル）として探索するブラウザ実験。',
     'projects.p3': '学内LMSの認証済みセッションからPDFを取得し、Notionページへ埋め込むChrome拡張。',
-    'projects.p4': 'ボストン・キャリアフォーラム向けの旅行・参加ガイド（リポジトリ内ドキュメント）。',
     'projects.p5': 'HTML/CSS/JavaScriptのみのWeb電卓アプリ。',
     'projects.p6':
       '自宅のゲーミングPCをブラウザから操作するリモートサービス。HTML5クライアント向けにHTTPS/Tailscale経由でWebSocketを安全に中継し、Moonlight/WebRTC設定で低遅延の映像・入力ストリーミングを提供します。',
@@ -87,7 +86,6 @@ const I18N = {
     'projects.p1': 'A three-dimensional take on the classic 2048 puzzle game.',
     'projects.p2': 'Experimental browser that maps HTML/DOM into a navigable 3D world.',
     'projects.p3': 'Chrome extension: fetch PDFs from an authenticated campus LMS session and embed them in Notion.',
-    'projects.p4': 'Trip and participation guide for the Boston Career Forum (docs in repo).',
     'projects.p5': 'Feature-rich calculator web app using vanilla HTML, CSS, and JavaScript.',
     'projects.p6':
       'Self-hosted service to use a home gaming PC from a browser: an HTTPS/Tailscale-aware WebSocket proxy for HTML5 remote clients, plus Moonlight/WebRTC streaming for low-latency video and input.',
