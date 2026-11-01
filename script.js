@@ -34,7 +34,7 @@ const I18N = {
     'projects.p4': 'ボストン・キャリアフォーラム向けの旅行・参加ガイド（リポジトリ内ドキュメント）。',
     'projects.p5': 'HTML/CSS/JavaScriptのみのWeb電卓アプリ。',
     'projects.p6':
-      '自宅のゲーミングPCをブラウザから操作するリモートサービス。HTML5クライアント向けにHTTPS/Tailscale経由でWebSocketを安全に中継し、Moonlight/WebRTC設定で低遅延の映像・入力ストリーミングを提供します（ゲーム内容には言及しません）。',
+      '自宅のゲーミングPCをブラウザから操作するリモートサービス。HTML5クライアント向けにHTTPS/Tailscale経由でWebSocketを安全に中継し、Moonlight/WebRTC設定で低遅延の映像・入力ストリーミングを提供します。',
     'projects.p7':
       '自宅LAN向けのWebコンソール「KAINEL Agent OS」。Fastify BFFがチャット、タスク、自動化、プラグイン、Discord連携などのAPIを提供し、OpenClawゲートウェイと連携してエージェント運用をブラウザから管理します。',
     'projects.p8':
@@ -90,7 +90,7 @@ const I18N = {
     'projects.p4': 'Trip and participation guide for the Boston Career Forum (docs in repo).',
     'projects.p5': 'Feature-rich calculator web app using vanilla HTML, CSS, and JavaScript.',
     'projects.p6':
-      'Self-hosted service to use a home gaming PC from a browser: an HTTPS/Tailscale-aware WebSocket proxy for HTML5 remote clients, plus Moonlight/WebRTC streaming for low-latency video and input (no game-specific content).',
+      'Self-hosted service to use a home gaming PC from a browser: an HTTPS/Tailscale-aware WebSocket proxy for HTML5 remote clients, plus Moonlight/WebRTC streaming for low-latency video and input.',
     'projects.p7':
       'Private web console (KAINEL Agent OS): a Fastify backend exposes chat, tasks, automations, plugins, and Discord integration APIs, coordinating with an OpenClaw gateway for agent operations in the browser.',
     'projects.p8':
