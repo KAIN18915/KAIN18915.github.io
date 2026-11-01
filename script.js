@@ -17,8 +17,6 @@ const I18N = {
     'about.fact2': '🎓 Kyoto University — EEE / UW Exchange',
     'about.fact3': '💻 Python · TypeScript · C++ · Web',
     'about.fact4': '🌏 日本語 / English',
-    'about.todo':
-      'TODO（Taito）: インターン・研究の具体的な実績を追記する場合は、確認できるソース（論文・発表・社名）とともに更新してください。',
     'skills.elec.title': 'Electronics',
     'skills.elec.body': '信号処理、RF、伝送線路、電磁波（授業・実験ベース）',
     'skills.sw.title': 'Software',
@@ -27,12 +25,20 @@ const I18N = {
     'skills.ai.body': 'ローカルLLMの試用、課題・個人開発での活用（Ollama 等）',
     'skills.tools.title': 'Tools',
     'skills.tools.body': 'GitHub、Notion、VS Code、Docker（個人環境）',
-    'projects.note': '公開GitHubリポジトリのみ掲載しています。',
+    'projects.note':
+      '公開リポジトリはGitHubへリンクしています。自宅サーバーで運用する非公開プロジェクトは説明のみ掲載しています。',
+    'projects.private': '非公開',
     'projects.p1': 'クラシック2048の3D版パズルゲーム。',
     'projects.p2': 'HTML/DOMを3D空間（建物・通路・ポータル）として探索するブラウザ実験。',
     'projects.p3': '学内LMSの認証済みセッションからPDFを取得し、Notionページへ埋め込むChrome拡張。',
     'projects.p4': 'ボストン・キャリアフォーラム向けの旅行・参加ガイド（リポジトリ内ドキュメント）。',
     'projects.p5': 'HTML/CSS/JavaScriptのみのWeb電卓アプリ。',
+    'projects.p6':
+      '自宅のゲーミングPCをブラウザから操作するリモートサービス。HTML5クライアント向けにHTTPS/Tailscale経由でWebSocketを安全に中継し、Moonlight/WebRTC設定で低遅延の映像・入力ストリーミングを提供します（ゲーム内容には言及しません）。',
+    'projects.p7':
+      '自宅LAN向けのWebコンソール「KAINEL Agent OS」。Fastify BFFがチャット、タスク、自動化、プラグイン、Discord連携などのAPIを提供し、OpenClawゲートウェイと連携してエージェント運用をブラウザから管理します。',
+    'projects.p8':
+      'Google Driveを中心にファイル共有・個人ダッシュボード・授業資料整理・NotebookLM/Gemini連携を行うNext.jsアプリ。Dockerで常時稼働し、OpenClaw向けAPIでKULMS（学内LMS）同期なども提供します。',
     'events.planned': '予定',
     'events.attendee': '参加',
     'events.boston.place': '📍 Boston, MA — Nov 20–22, 2026',
@@ -67,8 +73,6 @@ const I18N = {
     'about.fact2': '🎓 Kyoto University — EEE / UW Exchange',
     'about.fact3': '💻 Python · TypeScript · C++ · Web',
     'about.fact4': '🌏 Japanese / English',
-    'about.todo':
-      'TODO (Taito): Add internship or research highlights only with verifiable sources (employer, publication, talk).',
     'skills.elec.title': 'Electronics',
     'skills.elec.body': 'Signal processing, RF, transmission lines, electromagnetics (coursework & labs)',
     'skills.sw.title': 'Software',
@@ -77,12 +81,20 @@ const I18N = {
     'skills.ai.body': 'Local LLM experimentation for personal projects (e.g. Ollama)',
     'skills.tools.title': 'Tools',
     'skills.tools.body': 'GitHub, Notion, VS Code, Docker (personal setup)',
-    'projects.note': 'Only public GitHub repositories are listed here.',
+    'projects.note':
+      'Public repos link to GitHub. Private, self-hosted projects are described here without repository links.',
+    'projects.private': 'Private',
     'projects.p1': 'A three-dimensional take on the classic 2048 puzzle game.',
     'projects.p2': 'Experimental browser that maps HTML/DOM into a navigable 3D world.',
     'projects.p3': 'Chrome extension: fetch PDFs from an authenticated campus LMS session and embed them in Notion.',
     'projects.p4': 'Trip and participation guide for the Boston Career Forum (docs in repo).',
     'projects.p5': 'Feature-rich calculator web app using vanilla HTML, CSS, and JavaScript.',
+    'projects.p6':
+      'Self-hosted service to use a home gaming PC from a browser: an HTTPS/Tailscale-aware WebSocket proxy for HTML5 remote clients, plus Moonlight/WebRTC streaming for low-latency video and input (no game-specific content).',
+    'projects.p7':
+      'Private web console (KAINEL Agent OS): a Fastify backend exposes chat, tasks, automations, plugins, and Discord integration APIs, coordinating with an OpenClaw gateway for agent operations in the browser.',
+    'projects.p8':
+      'Next.js personal web app centered on Google Drive—multi-device file hub, configurable dashboard widgets, course materials, and NotebookLM/Gemini helpers—run in Docker with OpenClaw APIs for KULMS (campus LMS) sync.',
     'events.planned': 'Planned',
     'events.attendee': 'Attendee',
     'events.boston.place': '📍 Boston, MA — Nov 20–22, 2026',
