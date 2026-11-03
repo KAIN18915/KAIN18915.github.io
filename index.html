@@ -14,6 +14,51 @@
 </head>
 <body>
 
+  <!-- Icons: Lucide (https://lucide.dev), ISC License. See LICENSE-lucide.txt. Inlined so there is no external dependency. -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-pin" viewBox="0 0 24 24">
+    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+    <circle cx="12" cy="10" r="3" />
+    </symbol>
+    <symbol id="i-grad" viewBox="0 0 24 24">
+    <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+    <path d="M22 10v6" />
+    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+    </symbol>
+    <symbol id="i-code" viewBox="0 0 24 24">
+    <path d="m18 16 4-4-4-4" />
+    <path d="m6 8-4 4 4 4" />
+    <path d="m14.5 4-5 16" />
+    </symbol>
+    <symbol id="i-lang" viewBox="0 0 24 24">
+    <path d="m5 8 6 6" />
+    <path d="m4 14 6-6 2-3" />
+    <path d="M2 5h12" />
+    <path d="M7 2h1" />
+    <path d="m22 22-5-10-5 10" />
+    <path d="M14 18h6" />
+    </symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24">
+    <path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" />
+    </symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24">
+    <path d="M12 8V4H8" />
+    <rect width="16" height="12" x="4" y="8" rx="2" />
+    <path d="M2 14h2" />
+    <path d="M20 14h2" />
+    <path d="M15 13v2" />
+    <path d="M9 13v2" />
+    </symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24">
+    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" />
+    </symbol>
+    <symbol id="i-contrast" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" />
+    <path d="M12 18a6 6 0 0 0 0-12v12z" />
+    </symbol>
+  </svg>
+
+
   <div id="preloader">
     <div class="preloader-inner">
       <span class="preloader-logo">TI</span>
@@ -36,7 +81,7 @@
       <div class="nav-actions">
         <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
         <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark">
-          <span class="theme-icon">◐</span>
+          <span class="theme-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-contrast"/></svg></span>
         </button>
       </div>
     </div>
@@ -68,10 +113,10 @@
           <p data-i18n="about.p1"></p>
           <p data-i18n="about.p2"></p>
           <ul class="about-facts">
-            <li data-i18n="about.fact1"></li>
-            <li data-i18n="about.fact2"></li>
-            <li data-i18n="about.fact3"></li>
-            <li data-i18n="about.fact4"></li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span data-i18n="about.fact1"></span></li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-grad"/></svg><span data-i18n="about.fact2"></span></li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg><span data-i18n="about.fact3"></span></li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lang"/></svg><span data-i18n="about.fact4"></span></li>
           </ul>
         </div>
         <div class="about-visual fade-up">
@@ -90,22 +135,22 @@
       <h2 class="section-title"><span class="num">02</span> <span data-i18n="nav.skills">Skills</span></h2>
       <div class="skills-grid">
         <div class="skill-card fade-up">
-          <div class="skill-icon">⚡</div>
+          <div class="skill-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-zap"/></svg></div>
           <h3 data-i18n="skills.elec.title">Electronics</h3>
           <p data-i18n="skills.elec.body"></p>
         </div>
         <div class="skill-card fade-up">
-          <div class="skill-icon">💻</div>
+          <div class="skill-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg></div>
           <h3 data-i18n="skills.sw.title">Software</h3>
           <p data-i18n="skills.sw.body"></p>
         </div>
         <div class="skill-card fade-up">
-          <div class="skill-icon">🤖</div>
+          <div class="skill-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bot"/></svg></div>
           <h3 data-i18n="skills.ai.title">AI / ML</h3>
           <p data-i18n="skills.ai.body"></p>
         </div>
         <div class="skill-card fade-up">
-          <div class="skill-icon">🔧</div>
+          <div class="skill-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-wrench"/></svg></div>
           <h3 data-i18n="skills.tools.title">Tools</h3>
           <p data-i18n="skills.tools.body"></p>
         </div>
@@ -193,7 +238,7 @@
               <h3>JANOG57</h3>
               <span class="event-badge" data-i18n="events.attendee">Attendee</span>
             </div>
-            <p class="event-place" data-i18n="events.janog.place"></p>
+            <p class="event-place"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span data-i18n="events.janog.place"></span></p>
             <p class="event-desc" data-i18n="events.janog.desc"></p>
           </div>
           <div class="event-tags"><span>Network</span><span>Ops</span></div>
@@ -209,7 +254,7 @@
               <h3>Axies 2024</h3>
               <span class="event-badge" data-i18n="events.attendee">Attendee</span>
             </div>
-            <p class="event-place" data-i18n="events.axies.place"></p>
+            <p class="event-place"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span data-i18n="events.axies.place"></span></p>
             <p class="event-desc" data-i18n="events.axies.desc"></p>
           </div>
           <div class="event-tags"><span>ICT</span><span>University</span></div>

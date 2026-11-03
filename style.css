@@ -416,6 +416,9 @@ section:nth-child(even) { background: var(--bg2); }
 }
 
 .about-facts li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 12px;
   color: var(--text-dimmer);
   letter-spacing: 0.06em;
@@ -499,9 +502,15 @@ section:nth-child(even) { background: var(--bg2); }
 .skill-card:hover::before { width: 100%; }
 
 .skill-icon {
-  font-size: 22px;
   margin-bottom: 24px;
-  filter: grayscale(0.4);
+  color: var(--text-dim);
+  line-height: 0;
+}
+
+.skill-icon .icon {
+  width: 26px;
+  height: 26px;
+  stroke-width: 1.25;
 }
 
 .skill-card h3 {
@@ -682,6 +691,9 @@ section:nth-child(even) { background: var(--bg2); }
 }
 
 .event-place {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 12px;
   color: var(--text-dimmer);
   letter-spacing: 0.04em;
@@ -831,3 +843,18 @@ footer {
   .hero-deco { display: none; }
   section { padding: 90px 0; }
 }
+
+/* ===== ICONS (Lucide, inline sprite) ===== */
+.icon {
+  width: 1.15em;
+  height: 1.15em;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-icon { display: inline-flex; }
+.theme-icon .icon { width: 16px; height: 16px; }
