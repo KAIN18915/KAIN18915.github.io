@@ -10,7 +10,7 @@ const I18N = {
     'hero.line2': 'ワシントン大学（シアトル）交換留学 — 2027年3月まで',
     'hero.cta': '詳しく見る ↓',
     'about.p1':
-      '京都大学工学部電気電子工学科。信号処理・RF・AIシステムを中心に学んでいます。2026年3月までワシントン大学シアトル校で交換留学中です。',
+      '京都大学工学部電気電子工学科。信号処理・RF・AIシステムを中心に学んでいます。2027年3月までワシントン大学シアトル校で交換留学中です。',
     'about.p2':
       'Webアプリ、Chrome拡張、3D/インタラクティブなUIなど、学内外のプロジェクトをGitHubで公開しています。',
     'about.fact1': '📍 Seattle, WA（交換） / Kyoto, Japan',
@@ -40,9 +40,6 @@ const I18N = {
       'Google Driveを中心にファイル共有・個人ダッシュボード・授業資料整理・NotebookLM/Gemini連携を行うNext.jsアプリ。Dockerで常時稼働し、OpenClaw向けAPIでKULMS（学内LMS）同期なども提供します。',
     'events.planned': '予定',
     'events.attendee': '参加',
-    'events.boston.place': '📍 Boston, MA — Nov 20–22, 2026',
-    'events.boston.desc':
-      'ボストン・キャリアフォーラム参加予定。本サイトURLは名刺QRコード用に公開予定です。',
     'events.janog.place': '📍 大阪（JANOG57）',
     'events.janog.desc':
       'JANOG57に参加。ネットワーク運用・技術に関するセッションに参加しました（従来サイト記載より）。',
@@ -95,9 +92,6 @@ const I18N = {
       'Next.js personal web app centered on Google Drive—multi-device file hub, configurable dashboard widgets, course materials, and NotebookLM/Gemini helpers—run in Docker with OpenClaw APIs for KULMS (campus LMS) sync.',
     'events.planned': 'Planned',
     'events.attendee': 'Attendee',
-    'events.boston.place': '📍 Boston, MA — Nov 20–22, 2026',
-    'events.boston.desc':
-      'Planning to attend the Boston Career Forum. This site URL is intended for recruiters (business card QR).',
     'events.janog.place': '📍 Osaka — JANOG57',
     'events.janog.desc':
       'Attended JANOG57 (network operations conference), as listed on the previous portfolio site.',
